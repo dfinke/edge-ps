@@ -7,10 +7,13 @@ var invokeCS = edge.func('cs', function() {/*
 */});
 
 var invokePS = edge.func('ps', function() {/*
-    "PowerShell [$(Get-Date)]"
+#param($fromJS)
+#    "PowerShell [$(Get-Date)]"
+#"PowerShell welcomes $($args[1])"
+"PowerShell welcomes $($fromJS)"
 */});
 
-invokePS('testing', function (error, result) {
+invokePS('Node.js', function (error, result) {
 	if (error) throw error;
 
 	invokeCS('Node.js and ' + result, function (error, result) {

@@ -17,6 +17,8 @@ public class EdgeCompiler
             {
                 PowerShell powershell = PowerShell.Create();
                 powershell.AddScript(script);
+
+                powershell.AddParameter("fromJS", input);
                 powershell.AddParameter("parameters", parameters);
 
                 return powershell.Invoke().Select(psobject => psobject.BaseObject).ToList();
@@ -34,6 +36,10 @@ public class EdgeCompiler
         {
             // Read source from file
             source = File.ReadAllText(source);
+        }
+        else
+        {
+            source = "param($fromJS, $parameters)\r\n" + source;
         }
 
         return source;
