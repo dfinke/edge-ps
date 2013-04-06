@@ -1,5 +1,5 @@
 {
-	"name": "edge",
+	"name": "edge-ps",
 
 	"author": {
 		"name": "Doug Finke",
@@ -28,6 +28,6 @@
   	},
 
   	"bugs" : {
-  		"url" : "http://github.com/tjanczuk/edge-cs/issues"
+  		"url" : "http://github.com/dfinke/edge-ps/issues"
   	}
 }
