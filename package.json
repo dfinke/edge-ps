@@ -1,1 +1,41 @@
-{  "main": "./lib/edge-ps.js" }
+{
+	"name": "edge",
+
+	"author": {
+		"name": "Doug Finke",
+		"email": "finked@hotmail.com",
+		"url": "http://dougfinke.com"
+	},
+
+	"version": "0.1.0",
+
+	"tags": [
+	    "powershell",
+	    "owin",
+	    "edge",	    
+	    "clr",
+	    "c#",
+	    "managed",
+	    ".net"
+	  ],
+  
+	"main": "./lib/edge-ps.js",
+	
+	"engines": {
+		"node": ">= 0.6"
+	},
+
+	"dependencies": {
+		"edge": "*"
+	},
+
+	"homepage": "https://github.com/dfinke/edge-ps",
+
+	"repository": {
+		"type": "git",
+		"url": "git@github.com/dfinke/edge-ps.git"
+  	},
+
+  	"_id": "edge-ps@0.1.0",
+  	"_from": "edge-ps"
+}
