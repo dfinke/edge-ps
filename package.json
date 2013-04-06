@@ -4,38 +4,30 @@
 	"author": {
 		"name": "Doug Finke",
 		"email": "finked@hotmail.com",
-		"url": "http://dougfinke.com"
+		"url": "http://dougfinke.com",
+		"twitter": "dfinke"
 	},
 
-	"version": "0.1.0",
+	"version": "0.1.0-pre",
 
-	"tags": [
-	    "powershell",
-	    "owin",
-	    "edge",	    
-	    "clr",
-	    "c#",
-	    "managed",
-	    ".net"
-	  ],
+	"description": "edge-ps: run PowerShell and node.js code in-process with edge-ps.js",
+
+	"tags": ["powershell","owin","edge","clr","c#","managed",".net"],
   
 	"main": "./lib/edge-ps.js",
 	
-	"engines": {
-		"node": ">= 0.6"
-	},
+	"engines": { "node": ">= 0.6" },
 
-	"dependencies": {
-		"edge": "*"
-	},
+	"dependencies": { "edge": "*" },
 
 	"homepage": "https://github.com/dfinke/edge-ps",
 
 	"repository": {
 		"type": "git",
-		"url": "git@github.com/dfinke/edge-ps.git"
+		"url": "git@github.com:dfinke/edge-ps.git"
   	},
 
-  	"_id": "edge-ps@0.1.0",
-  	"_from": "edge-ps"
+  	"bugs" : {
+  		"url" : "http://github.com/tjanczuk/edge-cs/issues"
+  	}
 }
