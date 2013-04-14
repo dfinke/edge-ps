@@ -10,7 +10,7 @@ PowerShell Driving D3 Graph
 ========
 ![ScreenShot](https://raw.github.com/dfinke/edge-ps/master/d3Graph.png)
 
-```
+```javascript
 var ps=edge.func('ps', function(){/*
 
 $dataset = Get-Process |
