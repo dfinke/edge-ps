@@ -8,8 +8,8 @@ var port    = 3000;
 var ps=edge.func('ps', function(){/*
 
 $dataset = Get-Process |
-			Sort handles -desc|
-            Select -first 10 name, company, handles |			
+			Sort handles -desc |
+            Select -first 10 name, company, handles |
 			ConvertTo-Json -Compress
 
 @"
@@ -32,15 +32,25 @@ $dataset = Get-Process |
             var dataset = $dataset;
       
             d3.select("body")
-            .append("div")
-              .attr("class","chart")
-            .selectAll(".bar")
-            .data(dataset)
-            .enter()
-            .append("div")
-              .attr("class","bar")
-              .style("width", function(d){return d.Handles/10 + "px"})              
-              .text(function(d){return d.Name + ': ' + d.Handles});
+                .append("div")
+                  .attr("class","chart")
+                .selectAll("div.line")
+                .data(dataset)
+                .enter()
+                .append("div")
+                  .attr("class","line")
+            
+            d3.selectAll("div.line")
+                .append("div")
+                .attr("class","label")
+                .text(function(data) { return data.Name})
+
+            d3.selectAll("div.line")
+                .append("div")
+                .attr("class","bar")
+                .style("width", function(d){return d.Handles/10 + "px"})              
+                .text(function(d){return d.Handles});
+
         </script>
     
     </body>
