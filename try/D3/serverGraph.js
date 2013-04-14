@@ -19,36 +19,10 @@ $dataset = Get-Process |
         <title>Top 10 Process with most handles</title>
         <script type="text/javascript" src="js/d3.v3.js"></script>
 
-        <style>
-
-            div.chart{
-                font-family:sans-serif;
-                font-size:0.7em;
-            }
-
-            div.bar {
-                background-color:DarkRed;
-                color:white;
-                height:3em;
-                line-height:3em;
-                padding-right:1em;
-                margin-bottom:2px;
-                text-align:right;
-                margin-left:22em;
-            }
-
-            div.label {
-                height:3em;
-                line-height:3em;
-                padding-right:1em;
-                margin-bottom:2px;
-                float:left;
-                width:20em;
-                text-align:right;
-            }            
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/chart.css" />
 
         <h2>Top 10 Process with most handles</h2>
+        <span>Host: </span><span><b>$(hostname)</span>
     </head>
 
     <body>
