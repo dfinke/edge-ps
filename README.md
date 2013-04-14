@@ -8,6 +8,8 @@ This is a PowerShell compiler for edge.js.
 
 D3 Graph
 ========
+![ScreenShot](https://raw.github.com/dfinke/edge-ps/master/D3Graph.png)
+
 ```
 var ps=edge.func('ps', function(){/*
 
