@@ -33,7 +33,7 @@ $dataset = Get-Process |
       
             d3.select("body")
                 .append("div")
-                  .attr("class","chart")
+                .attr("class","chart")
                 .selectAll("div.line")
                 .data(dataset)
                 .enter()
@@ -43,13 +43,13 @@ $dataset = Get-Process |
             d3.selectAll("div.line")
                 .append("div")
                 .attr("class","label")
-                .text(function(data) { return data.Name})
+                .text(function(data) { return data.Name })
 
             d3.selectAll("div.line")
                 .append("div")
                 .attr("class","bar")
-                .style("width", function(d){return d.Handles/10 + "px"})              
-                .text(function(d){return d.Handles});
+                .style("width", function(d){ return d.Handles/10 + "px" })
+                .text(function(d){ return d.Handles });
 
         </script>
     
