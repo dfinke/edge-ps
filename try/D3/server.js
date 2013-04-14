@@ -3,19 +3,20 @@ var http    = require('http');
 var path    = require('path'); 
 var edge    = require('edge');
 var app     = express();
+var port    = 3000;
 
 var ps=edge.func('ps', function(){/*
 
-$dataset = get-process |
-			sort handles -desc|
-			select -first 10 name,handles |
+$dataset = Get-Process |
+			Sort handles -desc|
+            Select -first 10 name, company, handles |			
 			ConvertTo-Json -Compress
 
 @"
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>D3 Page Template</title>
+        <title>Top 10 Process with most handles</title>
         <script type="text/javascript" src="js/d3.v3.js"></script>
     </head>
     <body>
@@ -48,7 +49,6 @@ app.get('/', function(req, res){
     });   
 });
 
-var port = 3000;
 http.createServer(app).listen(port, function(){
   console.log('point your browser here: http://localhost:' + port);
 });
