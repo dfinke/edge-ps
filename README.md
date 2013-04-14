@@ -6,7 +6,7 @@ This is a PowerShell compiler for edge.js.
 ![ScreenShot](https://raw.github.com/dfinke/edge-ps/master/edge-ps.png)
 
 
-D3 Graph
+PowerShell Driving D3 Graph
 ========
 ![ScreenShot](https://raw.github.com/dfinke/edge-ps/master/d3Graph.png)
 
