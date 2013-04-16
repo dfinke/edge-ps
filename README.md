@@ -19,7 +19,7 @@ npm install edge
 
 ![ScreenShot](https://raw.github.com/dfinke/edge-ps/master/Excel+PowerShell.png)
 
-Here from a Node.js we can call PowerShell which fires up Excel. From PowerShell we access Excel Worksheet Functions and at the end, return a simple html table with the results.
+Here from a Node.js web server app we can call PowerShell which fires up Excel. From PowerShell we access Excel Worksheet Functions and at the end, return a simple html table with the results.
 
 ```javascript
 var ps=edge.func('ps', function(){/*
