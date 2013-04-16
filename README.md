@@ -7,7 +7,7 @@ This is a PowerShell compiler for edge.js.
 ## What you need
 
 * Windows
-* node.js 0.6.x or later (developed and tested with v0.6.20, v0.8.22, and v0.10.0, both x32 and x64 architectures)  
+* [node.js](http://nodejs.org) 0.6.x or later (developed and tested with v0.6.20, v0.8.22, and v0.10.0, both x32 and x64 architectures)  
 * edge.js See the [Edge.js overview](http://tjanczuk.github.com/edge).
 
 ```
