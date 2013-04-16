@@ -15,6 +15,45 @@ npm install edge
 * [.NET 4.5](http://www.microsoft.com/en-us/download/details.aspx?id=30653)  
 * PowerShell
 
+## Access Excel from the web with Node.js and PowerShell
+
+![ScreenShot](https://raw.github.com/dfinke/edge-ps/master/Excel+PowerShell.png)
+
+Here from a Node.js we can call PowerShell which fires up Excel. From PowerShell we access Excel Worksheet Functions and at the end, return a simple html table with the results.
+
+```javascript
+var ps=edge.func('ps', function(){/*
+
+    param($data=1..100)
+     
+    $xl = New-Object -ComObject Excel.Application
+    $xlProcess = Get-Process excel
+    $wf = $xl.WorksheetFunction
+
+    #$data = $data | Invoke-Expression
+     
+    $r = New-Object PSObject -Property @{
+        Median = $wf.Median($data)
+        StDev  = $wf.StDev($data)
+        Var    = $wf.Var($data)
+    } 
+     
+    $xlProcess.kill()
+
+@"
+    <h2>Calling Excel Worksheet Functions in PowerShell in a Node.js web server</h2>
+    <table border='1'>
+    <tr><td>Median</td><td>$($r.Median)</td></tr>
+    <tr><td>StDev</td><td>$($r.StDev)</td></tr>
+    <tr><td>Var</td><td>$($r.Var)</td></tr>
+    </table>
+"@
+
+*/})
+
+```
+
+
 ## PowerShell Driving D3 Graph
 
 ![ScreenShot](https://raw.github.com/dfinke/edge-ps/master/d3Graph.png)
