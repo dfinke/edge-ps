@@ -9,9 +9,11 @@ This is a PowerShell compiler for edge.js.
 * Windows
 * node.js 0.6.x or later (developed and tested with v0.6.20, v0.8.22, and v0.10.0, both x32 and x64 architectures)  
 * edge.js See the [Edge.js overview](http://tjanczuk.github.com/edge).
+
 ```
 npm install edge
 ```
+
 * [.NET 4.5](http://www.microsoft.com/en-us/download/details.aspx?id=30653)  
 * PowerShell
 
