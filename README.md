@@ -1,13 +1,18 @@
-edge-ps
-=======
+## edge-ps
 
 This is a PowerShell compiler for edge.js.
 
 ![ScreenShot](https://raw.github.com/dfinke/edge-ps/master/edge-ps.png)
 
+## What you need
 
-PowerShell Driving D3 Graph
-========
+* Windows
+* node.js 0.6.x or later (developed and tested with v0.6.20, v0.8.22, and v0.10.0, both x32 and x64 architectures)  
+* [.NET 4.5](http://www.microsoft.com/en-us/download/details.aspx?id=30653)  
+* PowerShell
+
+## PowerShell Driving D3 Graph
+
 ![ScreenShot](https://raw.github.com/dfinke/edge-ps/master/d3Graph.png)
 
 ```javascript
