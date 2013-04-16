@@ -14,6 +14,12 @@ This is a PowerShell compiler for edge.js.
 npm install edge
 ```
 
+* edge-ps 
+
+```
+npm install edge-ps
+```
+
 * [.NET 4.5](http://www.microsoft.com/en-us/download/details.aspx?id=30653)  
 * PowerShell
 
